@@ -15,100 +15,149 @@ footer {
 
 body {
   background-color: rgb(6, 122, 112);
-  width: 90%;
-  max-width: 800px;
-  margin: auto;
   color: aliceblue;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-main {
-  background-image: url(wp7524431.jpg);
+main{
+  margin: auto;
+  max-width: 900px;
+  min-height: 100vh;
   display: grid;
-  grid-template-columns: 100px 3f 1fr;
-  grid-template-areas:
-    "h h h h h"
-    "n n n n n"
-    "b a a a j"
-    "f f f f f";
+  grid-template-columns: 20vh 1fr 20vh;
+  grid-template-areas: 
+  "h h h"
+  "n n n"
+  "j a b"
+  "f f f";
 }
 
-header {
-  grid-area: h;
-}
-nav {
+nav{
   grid-area: n;
 }
-nav ul {
-  display: grid;
-  list-style-type: none;
-  padding: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding-top: 20px;
-  border: 0px solid white;
-  margin: 20px;
-  border-radius: 15px;
-  gap: 10px;
+header{
+  grid-area: h;
 }
-
-article {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+article{
   grid-area: a;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
 }
-
+aside#jobb{
+  grid-area: j;
+}
+aside#bal{
+  grid-area: b;
+}
+footer{
+  grid-area: f;
+}
+#1{
+  grid-area: 1;
+}
+#2{
+  grid-area: 2;
+}
+#3{
+  grid-area: 3;
+}
+#4{
+  grid-area: 4;
+}
+#5{
+  grid-area: 5;
+}
+#6{
+  grid-area: 6;
+}
+#kep1{
+  grid-area: kep1;
+}
+#kep2{
+  grid-area: kep2;
+}
+#kep3{
+  grid-area: kep3;
+}
 article img {
   width: 100%;
   height: auto;
   max-width: 100%;
 }
 
-.sor {
-  margin: 2px;
+nav ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "1  2  3";
 }
-footer {
-  grid-area: f;
-}
-
-aside#bal {
-  grid-area: b;
-}
-
-aside#jobb {
-  grid-area: j;
-}
-
 @media screen and (max-width: 700px) {
   body {
+    margin: auto;
     width: 100%;
     font-size: 5vw;
   }
   main {
-    grid-template-columns: 2fr 1f;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
-      "h h"
-      "n n"
-      "a a"
-      "j j"
-      "b b"
-      "f f";
+      "h h h"
+      "n n n"
+      "a a j"
+      "b b b"
+      "f f f";
   }
+  nav ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "1"
+    "2"
+    "3";
+  }
+  article{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "4 5 ."
+    "6 6 6";
+  }
+ 
 }
+
 
 @media screen and (max-width: 400px) {
   body {
+    margin: auto;
     width: 100%;
     font-size: 5vw;
   }
   main {
+    margin: auto;
     grid-template-columns: 1fr;
     grid-template-areas:
-      "h"
-      "n"
-      "a"
-      "j"
-      "b"
-      "f";
+      "h h h"
+      "n n n"
+      "a a a"
+      "j j j"
+      "b b b"
+      "f f f";
+  }
+  nav ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "1"
+    "2"
+    "3";
+  }
+  article{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "4"
+    "5"
+    "6";
   }
 }
