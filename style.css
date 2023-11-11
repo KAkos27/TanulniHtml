@@ -19,65 +19,65 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-main{
+main {
   margin: auto;
   max-width: 900px;
   min-height: 100vh;
   display: grid;
   grid-template-columns: 20vh 1fr 20vh;
-  grid-template-areas: 
-  "h h h"
-  "n n n"
-  "j a b"
-  "f f f";
+  grid-template-areas:
+    "h h h"
+    "n n n"
+    "j a b"
+    "f f f";
 }
 
-nav{
+nav {
   grid-area: n;
 }
-header{
+header {
   grid-area: h;
 }
-article{
+article {
   grid-area: a;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 5px;
 }
-aside#jobb{
+aside#jobb {
   grid-area: j;
 }
-aside#bal{
+aside#bal {
   grid-area: b;
 }
-footer{
+footer {
   grid-area: f;
 }
-#1{
+#1 {
   grid-area: 1;
 }
-#2{
+#2 {
   grid-area: 2;
 }
-#3{
+#3 {
   grid-area: 3;
 }
-#4{
+#4 {
   grid-area: 4;
 }
-#5{
+#5 {
   grid-area: 5;
 }
-#6{
+#6 {
   grid-area: 6;
 }
-#kep1{
+#kep1 {
   grid-area: kep1;
 }
-#kep2{
+#kep2 {
   grid-area: kep2;
 }
-#kep3{
+#kep3 {
   grid-area: kep3;
 }
 article img {
@@ -86,11 +86,10 @@ article img {
   max-width: 100%;
 }
 
-nav ul{
+nav ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: 
-  "1  2  3";
+  grid-template-areas: "1  2  3";
 }
 @media screen and (max-width: 700px) {
   body {
@@ -108,24 +107,30 @@ nav ul{
       "b b b"
       "f f f";
   }
-  nav ul{
+  nav ul {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: 
-    "1"
-    "2"
-    "3";
+    grid-template-areas:
+      "1"
+      "2"
+      "3";
   }
-  article{
+  #6 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "4 5 ."
-    "6 6 6";
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "kep1 kep2"
+      "kep3 ....";
   }
- 
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "4 5"
+      "6 6"
+      ". .";
+  }
 }
-
 
 @media screen and (max-width: 400px) {
   body {
@@ -144,20 +149,20 @@ nav ul{
       "b b b"
       "f f f";
   }
-  nav ul{
+  nav ul {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: 
-    "1"
-    "2"
-    "3";
+    grid-template-areas:
+      "1"
+      "2"
+      "3";
   }
-  article{
+  article {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: 
-    "4"
-    "5"
-    "6";
+    grid-template-areas:
+      "4"
+      "5"
+      "6";
   }
 }
