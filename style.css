@@ -80,6 +80,9 @@ footer {
 #kep3 {
   grid-area: kep3;
 }
+#kep4 {
+  grid-area: kep4;
+}
 article img {
   width: 100%;
   height: auto;
@@ -115,21 +118,21 @@ nav ul {
       "2"
       "3";
   }
-  #6 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "kep1 kep2"
-      "kep3 ....";
-  }
   article {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "4 5"
-      "6 6"
-      ". .";
+      "6 6";
   }
+  #6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "kep1 kep2"
+      "kep3 kep4";
+  }
+
 }
 
 @media screen and (max-width: 400px) {
